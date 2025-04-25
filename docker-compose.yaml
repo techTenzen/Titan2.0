@@ -1,10 +1,10 @@
 services:
   app-prod:
-    image: bolt-ai:production
+    image: titan-ai:production
     build:
       context: .
       dockerfile: Dockerfile
-      target: bolt-ai-production
+      target: titan-ai-production
     ports:
       - '5173:5173'
     env_file: '.env.local'
@@ -36,7 +36,7 @@ services:
   app-dev:
     image: bolt-ai:development
     build:
-      target: bolt-ai-development
+      target: titan-ai-development
     env_file: '.env.local'
     environment:
       - NODE_ENV=development
