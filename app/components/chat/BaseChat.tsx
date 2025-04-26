@@ -317,6 +317,7 @@ export const BaseChat = React.forwardRef<HTMLDivElement, BaseChatProps>(
       }
     };
 
+    // @ts-ignore
     const baseChat = (
       <div
         ref={ref}
@@ -329,16 +330,48 @@ export const BaseChat = React.forwardRef<HTMLDivElement, BaseChatProps>(
             {!chatStarted && (
               <div id="intro" className="mt-[16vh] max-w-chat mx-auto text-center px-4 lg:px-0">
                 {/* Notification Line */}
+
+                <style
+                  dangerouslySetInnerHTML={{
+                    __html: `
+      .gradient-notification-text {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        background: linear-gradient(
+          90deg,
+          #6f3fc9 0%,
+          #7928CA 25%,
+          #3a3aee 50%,
+          #FF3370 75%,
+          #a084e8 100%
+        );
+        background-size: 300% 100%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: gradientMoveNotif 6s linear infinite;
+        letter-spacing: -0.02em;
+      }
+      @keyframes gradientMoveNotif {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+    `,
+                  }}
+                />
+
+
                 <div className="inline-flex items-center justify-center px-4 py-1 mb-4 rounded-full text-sm font-medium text-[#6f3fc9] bg-[#f3e8ff] animate-fade-in">
-                  <span className="mr-2 text-[#6f3fc9] text-base">●</span>
+                  <span className="mr-2 gradient-notification-text text-base">●</span>
                   <a
                     href="https://titannexus-production.up.railway.app/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:underline"
+                    className="gradient-notification-text hover:underline"
                   >
-                    Join the Titan AI community — meet like-minded devs & build together!
-                  </a>
+                    Plug into the Titan Nexus. Code harder. Win together.                  </a>
+
                 </div>
 
 
@@ -376,7 +409,8 @@ export const BaseChat = React.forwardRef<HTMLDivElement, BaseChatProps>(
                 <h1 className="text-5xl lg:text-6xl font-bold mb-4 animate-fade-in gradient-text">Where ideas begin</h1>
 
                 <p className="text-md lg:text-xl mb-8 text-bolt-elements-textSecondary animate-fade-in animation-delay-200">
-                  Bring ideas to life in seconds or get help on existing projects.
+                  Fueling Ambition. Accelerating Impact
+                  {/*Supercharging Creation. Amplifying Outcomes*/}
                 </p>
               </div>
             )}
