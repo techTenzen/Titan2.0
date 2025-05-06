@@ -117,25 +117,118 @@ Work simultaneously with team members on shared projects.
 ### 📊 Advanced Analytics Dashboard
 Monitor your projects with comprehensive analytics, performance metrics, and AI usage insights.
 
+### 🗺️ Roadmap & Feature Progress
+Below is a live checklist of requested features, integrations, and enhancements-showing what’s shipped and what’s planned. Community contributions are welcome!
+
+## 🟩 Completed
+
+✅ OpenRouter Integration (@coleam00)
+
+✅ Gemini Integration (@jonathands)
+
+✅ Autogenerate Ollama models from what is downloaded (@yunatamos)
+
+✅ Filter models by provider (@jasonm23)
+
+✅ Download project as ZIP (@fabwaseem)
+
+✅ Improvements to the main bolt.new prompt (@kofi-bhr)
+
+✅ DeepSeek API Integration (@zenith110)
+
+✅ Mistral API Integration (@ArulGandhi)
+
+✅ "Open AI Like" API Integration (@ZerxZ)
+
+✅ One-way file sync to local folder (@muzafferkadir)
+
+✅ Docker containerization for easy install (@aaronbolton)
+
+✅ Publish projects directly to GitHub (@goncaloalves)
+
+✅ Enter API keys in the UI (@ali00209)
+
+✅ xAI Grok Beta Integration (@milutinke)
+
+✅ LM Studio Integration (@karrot0)
+
+✅ HuggingFace Integration (@ahsan3219)
+
+✅ Bolt terminal for LLM run output (@thecodacus)
+
+✅ Streaming code output (@thecodacus)
+
+✅ Revert code to earlier version (@wonderwhy-er)
+
+✅ Chat history backup and restore (@sidbetatester)
+
+✅ Cohere Integration (@hasanraiyan)
+
+✅ Dynamic model max token length (@hasanraiyan)
+
+✅ Prompt enhancements & caching (@SujalXplores)
+
+✅ Load local projects into app (@wonderwhy-er)
+
+✅ Together Integration (@mouimet-infinisoft)
+
+✅ Mobile friendly (@qwikode)
+
+✅ Attach images to prompts (@atrokhym, @stijnus)
+
+✅ Git Clone & Import from URL (@thecodacus)
+
+✅ PromptLibrary for use-case variations (@thecodacus)
+
+✅ Auto install & preview for folder/git import (@wonderwhy-er)
+
+✅ Selection tool for visual changes (@emcconnell)
+
+✅ Error detection & auto-fix (terminal/preview) (@thecodacus, @wonderwhy-er)
+
+✅ Starter Template Options (@thecodacus)
+
+✅ Perplexity Integration (@meetpateltech)
+
+✅ AWS Bedrock Integration (@kunjabijukchhe)
+
+✅ Diff View for changes (@toddyclipsgg)
+
+✅ Deploy directly to Netlify (@xKevIsDev)
+
+✅ Popout Window for Web Container & resize (@stijnus)
+
+## 🟨 In Progress / High Priority
+
+🧠 Prevent bolt from rewriting files as often (file locking and diffs)
+
+🧠 Better prompting for smaller LLMs (code window stability)
+
+🧠 Run agents in the backend (not just single model calls)
+
+## ⬜ Planned / Requested
+
+⬜ Supabase Integration
+
+⬜ LLM project planning in Markdown
+
+⬜ VSCode Integration with git-like confirmations
+
+⬜ Upload documents for knowledge (UI, codebase, etc.)
+
+⬜ Voice prompting
+
+⬜ Azure Open AI API Integration
+
+⬜ Vertex AI Integration
+
+⬜ Granite Integration
+
 ## 🏃‍♀️ Quickstart Guide
 
 See the [Installation](#installation) section above for setup instructions.
 
-### 📈 Quick Analytics Overview
 
-Get a quick view of your development metrics right from launch:
-
-```sh
-# Launch TitanAiCore with analytics dashboard
-pnpm run dev --with-analytics
-
-# Export analytics data to CSV/JSON
-pnpm run export-analytics --format=json --output=./reports
-```
-
-<div align="center">
-  <img src="https://via.placeholder.com/800x400?text=TitanAiCore+Real-Time+Analytics" alt="Analytics Overview" width="80%">
-</div>
 
 ## ⚙️ Configuration
 
@@ -208,63 +301,12 @@ git reset --hard origin/main
 git reset --hard origin/stable
 ```
 
-## 📊 Analytics
 
-TitanAiCore includes an analytics dashboard that provides insights into your development workflow. Monitor AI usage, track performance, and optimize your development process with comprehensive metrics and customizable reports.
-
-Get a quick view of your development metrics right from launch:
-
-```sh
-# Launch TitanAiCore with analytics dashboard
-pnpm run dev --with-analytics
-
-# Export analytics data to CSV/JSON
-pnpm run export-analytics --format=json --output=./reports
-```
 
 ## 🚀 TitanAiCore vs Other AI Code Generators
 
 TitanAiCore stands out in the competitive landscape of AI-powered development platforms. Our community-driven benchmarks show significant advantages in key areas:
 
-### ⚡ Performance Comparison
-
-| Platform | Code Generation Speed | Response Time | First Time to Code |
-|----------|:---------------------:|:-------------:|:------------------:|
-| TitanAiCore | 4.2x faster | 215ms | <1 minute |
-| bolt.diy | 1.0x (baseline) | 850ms | 5+ minutes |
-| GitHub Copilot | 2.8x faster | 380ms | 3 minutes |
-| Amazon CodeWhisperer | 2.3x faster | 420ms | 4 minutes |
-| Replit Ghostwriter | 3.1x faster | 310ms | 2 minutes |
-
-### 🎯 Accuracy & Relevance
-
-<div align="center">
-  <img src="https://via.placeholder.com/800x400?text=Code+Quality+Comparison+Chart" alt="Code Quality Comparison" width="80%">
-</div>
-
-| Platform | Code Success Rate | Framework Compatibility | Syntax Accuracy |
-|----------|:------------------:|:----------------------:|:---------------:|
-| TitanAiCore | 94.7% | 12+ frameworks | 98.2% |
-| bolt.diy | 81.3% | 4 frameworks | 89.5% |
-| GitHub Copilot | 89.2% | 8+ frameworks | 95.1% |
-| Amazon CodeWhisperer | 85.4% | 6 frameworks | 93.7% |
-| Replit Ghostwriter | 87.9% | 7 frameworks | 94.3% |
-
-### 💰 Value Metrics
-
-<div align="center">
-  <img src="https://via.placeholder.com/800x400?text=Developer+Time+Saved+Per+Project" alt="Developer Time Saved" width="80%">
-</div>
-
-| Platform | Cost Model | Dev Time Saved | ROI Factor |
-|----------|:----------:|:--------------:|:----------:|
-| TitanAiCore | Free/Open-Source | 62% | ∞ (infinity) |
-| bolt.diy | $29/mo | 43% | 2.1x |
-| GitHub Copilot | $10-$19/mo | 35% | 3.8x |
-| Amazon CodeWhisperer | Pay-per-use | 31% | 2.7x |
-| Replit Ghostwriter | $20/mo | 38% | 2.9x |
-
-*Data based on internal benchmarks comparing 500+ development tasks across multiple programming languages and frameworks. Last updated May 2025.*
 
 ## 📜 Available Scripts
 
