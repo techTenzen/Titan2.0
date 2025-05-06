@@ -1,7 +1,5 @@
 <div align="center">
   <img src="https://github.com/user-attachments/assets/044f01e2-efb9-43fe-9556-102d83ac5dc5" alt="TitanAiCore Logo" width="200" height="200">
-
-  <h1>TitanAiCore</h1>
   <p><strong>The Next-Generation AI-Powered Development Platform</strong></p>
 
   <p>
@@ -345,8 +343,6 @@ Explore our vibrant ecosystem - your comprehensive space to:
 
 <div align="center">
   <h3><a href="https://github.com/techTenzen/TitanAiCore/discussions">🌐 Join TitanAiCore Community Today!</a></h3>
-  
-  <img src="https://via.placeholder.com/800x200?text=Community+Activity+Heatmap" alt="Community Activity" width="80%">
 </div>
 
 ## 👨‍💻 Contributing
